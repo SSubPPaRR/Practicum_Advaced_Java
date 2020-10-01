@@ -9,8 +9,9 @@ public class CompareY extends Point implements Comparable<Point> {
 
     public CompareY(int x, int y) {
         super(x, y);
+        this.x = x;
+        this.y = y;
     }
-
 
     @Override
     public int compareTo(Point o) {

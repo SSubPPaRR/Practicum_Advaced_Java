@@ -1,7 +1,6 @@
 package week4;
 
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Arrays;
@@ -15,8 +14,8 @@ public class JavaToHTML {
 
         try {
             // get java file
-            //System.out.println("please enter path to a .java file");
-            javaFilePath = "C:\\Users\\clayt\\OneDrive\\Documents\\practjavaweek clayton\\src\\week4\\Welcome.java" ;//input.nextLine();
+            System.out.println("please enter path to a .java file");
+            javaFilePath = input.nextLine();//"C:\\Users\\clayt\\OneDrive\\Documents\\practjavaweek clayton\\src\\week4\\Welcome.java" ;//
             File textFile = new File(javaFilePath);
 
             // get html file name
