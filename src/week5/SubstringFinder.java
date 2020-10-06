@@ -17,7 +17,7 @@ public class SubstringFinder {
         }
         else System.out.println("Can't display index: no substring found.");
     }
-
+    //returns index of character after given index startIndex
     private static int getCharIndex(String s1,String s2, int startIndex){
         int index = -1;
         char[] list =  s1.toCharArray();
@@ -30,7 +30,7 @@ public class SubstringFinder {
         }
         return index;
     }
-
+    //recursive method that
     private static int substringSearch(String s1,String s2,int startIndex, int lastIndex){
         int index = -1;
         int lastStartIndex = startIndex;

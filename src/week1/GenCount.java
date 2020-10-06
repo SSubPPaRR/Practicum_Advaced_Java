@@ -52,10 +52,10 @@ public class GenCount {
 
                  for (int i = length - 1; i >= 0; i--){
                      reverse = reverse + original.charAt(i);
-                     if (original.equals(reverse)) {
-                        palCount++;
-                     }
                 }
+                 if (original.equals(reverse)) {
+                     palCount++;
+                 }
              }
         }
 
