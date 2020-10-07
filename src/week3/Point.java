@@ -3,19 +3,24 @@ package week3;
 import java.util.Arrays;
 
 public class Point implements Comparable<Point>{
-    private int x;
-    private int y;
+    private double x;
+    private double y;
 
     public Point(int x,int y) {
         this.x = x;
         this.y = y;
     }
 
-    public int getX() {
+    public Point() {
+    }
+    public Point(double x, double y) {
+    }
+
+    public double getX() {
         return x;
     }
 
-    public int getY() {
+    public double getY() {
         return y;
     }
 
@@ -32,9 +37,9 @@ public class Point implements Comparable<Point>{
         if(this.x == o.x){
             if (this.y == o.y){
                 return 0;
-            }else return this.y - o.y;
+            }else return (int) ((int) this.y - o.y);
         }
-        else return this.x-o.x;
+        else return (int) (this.x-o.x);
     }
 
     public static void main(String[] args) {
@@ -44,7 +49,12 @@ public class Point implements Comparable<Point>{
             int y = (int) (Math.random() * 100);
             arr[i] = new Point(x,y);
         }
+        System.out.println("array sorted by x is:");
         Arrays.sort(arr);
+        System.out.println(Arrays.toString(arr));
+
+        System.out.println("array sorted by y is:");
+        Arrays.sort(arr, new CompareY());
         System.out.println(Arrays.toString(arr));
     }
 }

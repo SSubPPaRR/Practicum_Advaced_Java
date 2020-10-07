@@ -22,8 +22,10 @@ public class DupliText {
                 String data = reader.nextLine();
                 wordList.add(data);
             }
+
             Object[] arr = wordList.toArray();
             Arrays.sort(arr);
+
             for (Object i : arr) {
                 System.out.println(i);
             }
