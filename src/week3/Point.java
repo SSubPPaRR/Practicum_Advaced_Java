@@ -49,6 +49,7 @@ public class Point implements Comparable<Point>{
             int y = (int) (Math.random() * 100);
             arr[i] = new Point(x,y);
         }
+
         System.out.println("array sorted by x is:");
         Arrays.sort(arr);
         System.out.println(Arrays.toString(arr));
