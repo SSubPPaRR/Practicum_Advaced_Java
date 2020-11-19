@@ -2,7 +2,6 @@ package week6.exercise2;
 
 import java.util.Random;
 import java.util.concurrent.ForkJoinPool;
-import java.util.concurrent.ForkJoinTask;
 import java.util.concurrent.RecursiveAction;
 
 public class ParallelAssign {
